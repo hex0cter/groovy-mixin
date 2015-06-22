@@ -1,0 +1,29 @@
+apply plugin: "groovy"
+apply plugin: 'codenarc'
+
+version = "1.0"
+description = "Tranzaxis Business Scenarios"
+
+// Spock works with Java 1.5 and above
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    // mandatory dependencies for using Spock
+    compile "org.codehaus.groovy:groovy-all:2.4.5"
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+
+    // dependencies used in this project
+    compile "org.codenarc:CodeNarc:0.25.1"
+}
+
+test {
+    if (project.hasProperty('maxParallelForks'))
+        maxParallelForks = project.maxParallelForks as int
+    if (project.hasProperty('forkEvery'))
+        forkEvery = project.forkEvery as int
+}
