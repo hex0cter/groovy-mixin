@@ -27,3 +27,12 @@ test {
     if (project.hasProperty('forkEvery'))
         forkEvery = project.forkEvery as int
 }
+
+codenarc {
+    ignoreFailures false
+    configFile file('config/codenarc/codenarc.rules')
+
+    maxPriority1Violations 0
+    maxPriority2Violations 0
+    maxPriority3Violations 0
+}

@@ -2,11 +2,14 @@ package com.hex0cter.mixin
 
 import java.security.SecureRandom
 
+/**
+ * Mixin for collections, i.e., ArrayList, Range
+ */
 class Collection {
     static init() {
         java.util.ArrayList.metaClass.getSample = { ->
-            def random = new SecureRandom()
-            def i = random.nextInt(delegate.size())
+            SecureRandom random = new SecureRandom()
+            int i = random.nextInt(delegate.size())
             delegate[i]
         }
 

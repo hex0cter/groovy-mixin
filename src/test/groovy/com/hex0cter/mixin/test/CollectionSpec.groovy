@@ -2,6 +2,9 @@ package com.hex0cter.mixin.test
 
 import spock.lang.Specification
 
+/**
+ * CollectionSpec Test
+ */
 class CollectionSpec extends Specification {
 
     def setup() {
