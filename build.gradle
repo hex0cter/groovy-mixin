@@ -18,7 +18,7 @@ dependencies {
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
 
     // dependencies used in this project
-    compile "org.codenarc:CodeNarc:0.25.1"
+    compile "org.codenarc:CodeNarc:0.25.2"
 }
 
 test {
