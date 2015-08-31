@@ -109,8 +109,7 @@ ruleset {
     FinalClassWithProtectedMember 
     ImplementationAsType 
     LocaleSetDefault 
-    NestedForLoop 
-    PrivateFieldCouldBeFinal 
+    PrivateFieldCouldBeFinal
     PublicInstanceField 
     ReturnsNullInsteadOfEmptyArray 
     ReturnsNullInsteadOfEmptyCollection 
