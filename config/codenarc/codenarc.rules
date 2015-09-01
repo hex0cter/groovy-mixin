@@ -293,8 +293,7 @@ ruleset {
     AbstractClassName 
     ClassName 
     ClassNameSameAsFilename 
-    ClassNameSameAsSuperclass 
-    ConfusingMethodName 
+    ConfusingMethodName
     FactoryMethodName 
     FieldName 
     InterfaceName 
