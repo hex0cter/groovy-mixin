@@ -297,8 +297,7 @@ ruleset {
     FactoryMethodName 
     FieldName 
     InterfaceName 
-    InterfaceNameSameAsSuperInterface 
-    ObjectOverrideMisspelledMethodName 
+    ObjectOverrideMisspelledMethodName
     PackageName 
     PackageNameMatchesFilePath 
     ParameterName 
