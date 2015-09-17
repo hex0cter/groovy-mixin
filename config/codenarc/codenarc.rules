@@ -299,8 +299,7 @@ ruleset {
     InterfaceName 
     ObjectOverrideMisspelledMethodName
     PackageName 
-    PackageNameMatchesFilePath 
-    ParameterName 
+    ParameterName
     PropertyName 
     VariableName 
     
