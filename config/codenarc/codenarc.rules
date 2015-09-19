@@ -329,8 +329,7 @@ ruleset {
     MethodCount 
     MethodSize 
     NestedBlockDepth 
-    ParameterCount 
-    
+
     // rulesets/unnecessary.xml
     AddEmptyString 
     ConsecutiveLiteralAppends 
