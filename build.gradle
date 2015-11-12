@@ -13,12 +13,9 @@ repositories {
 }
 
 dependencies {
-    // mandatory dependencies for using Spock
     compile "org.codehaus.groovy:groovy-all:2.4.5"
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
-
-    // dependencies used in this project
-    compile "org.codenarc:CodeNarc:0.21"
+    testCompile "org.codenarc:CodeNarc:0.21"
 }
 
 test {
