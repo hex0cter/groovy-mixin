@@ -4,3 +4,4 @@ install: true
 
 jdk:
   - oraclejdk8
+  - oraclejdk7

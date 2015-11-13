@@ -2,10 +2,7 @@ apply plugin: "groovy"
 apply plugin: 'codenarc'
 
 version = "1.0"
-description = "Tranzaxis Business Scenarios"
-
-// Spock works with Java 1.5 and above
-sourceCompatibility = 1.8
+description = "Groovy language mixin"
 
 repositories {
     mavenCentral()
@@ -13,8 +10,8 @@ repositories {
 }
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:2.4.5"
-    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+    compile "org.codehaus.groovy:groovy-all"
+    testCompile "org.spockframework:spock-core"
     testCompile "org.codenarc:CodeNarc:0.21"
 }
 
