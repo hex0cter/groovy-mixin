@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/hex0cter/groovy-mixin.svg?branch=master)](https://travis-ci.org/hex0cter/groovy-mixin)
 
 
-This library contains some shortcuts for you to use groovy more easily.
+Groovy is awesome. This library contains shortcuts to make your groovy development even more joyful.
 
-## Sample
+## Collections
 
 Missing the sample function from Ruby? Here it is. By enabling this library you can
 
@@ -17,6 +17,7 @@ Missing the sample function from Ruby? Here it is. By enabling this library you 
 
 both gives you a random number from 1 to 5.
 
+You can also verify if a number is included in an array or range using
 
 ```groovy
   5.in [1, 2, 3, 4, 5]
