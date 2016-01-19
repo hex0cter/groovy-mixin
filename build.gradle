@@ -1,4 +1,5 @@
 apply plugin: "groovy"
+apply plugin: 'maven-publish'
 apply plugin: 'codenarc'
 
 version = "1.0"
@@ -20,6 +21,24 @@ test {
         maxParallelForks = project.maxParallelForks as int
     if (project.hasProperty('forkEvery'))
         forkEvery = project.forkEvery as int
+}
+
+task fatJar(type: Jar) {
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'com.hex0cter.groovy'
+            artifactId 'mixin'
+            version '1.0'
+
+            from components.java
+        }
+    }
 }
 
 codenarc {
