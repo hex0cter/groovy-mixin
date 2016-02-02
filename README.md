@@ -11,8 +11,8 @@ Missing the sample function from Ruby? Here it is. By enabling this library you 
 
 
 ```groovy
-  [1, 2, 3, 4, 5].sample
-  (1..5).sample
+  [1, 2, 3, 4, 5].sample()
+  (1..5).sample()
 ```
 
 both gives you a random number from 1 to 5.
@@ -20,8 +20,8 @@ both gives you a random number from 1 to 5.
 You can also verify if a number is included in an array or range using
 
 ```groovy
-  5.in [1, 2, 3, 4, 5]
-  3.in (1..5)
+  5.isPartOf [1, 2, 3, 4, 5]
+  3.isPartOf (1..5)
 ```
 
 both returns true.

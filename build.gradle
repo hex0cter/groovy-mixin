@@ -16,13 +16,6 @@ dependencies {
     testCompile 'org.codenarc:CodeNarc:0.21'
 }
 
-test {
-    if (project.hasProperty('maxParallelForks'))
-        maxParallelForks = project.maxParallelForks as int
-    if (project.hasProperty('forkEvery'))
-        forkEvery = project.forkEvery as int
-}
-
 task fatJar(type: Jar) {
     baseName = project.name + '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
@@ -32,8 +25,8 @@ task fatJar(type: Jar) {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId 'com.hex0cter.groovy'
-            artifactId 'mixin'
+            groupId 'com.hex0cter'
+            artifactId 'groovy'
             version '1.0'
 
             from components.java

@@ -1,4 +1,4 @@
-package com.hex0cter.mixin.test
+package com.hex0cter.groovy.test
 
 import spock.lang.Specification
 
@@ -6,14 +6,9 @@ import spock.lang.Specification
  * CollectionSpec Test
  */
 class CollectionSpec extends Specification {
-
-    def setup() {
-        com.hex0cter.mixin.Collection.init()
-    }
-
     def "take sample from a collection"() {
         expect:
-        collection.sample.in collection
+        collection.sample().isPartOf collection
 
         where:
         collection | _
