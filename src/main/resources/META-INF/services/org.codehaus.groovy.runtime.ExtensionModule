@@ -1,4 +1,3 @@
-# File: src/main/resources/META-INF/services/com.hex0cter.groovy.runtime.ExtensionModule
-moduleName = mixin-module
+moduleName = groovy-mixin
 moduleVersion = 1.0
 extensionClasses = com.hex0cter.groovy.Collection
