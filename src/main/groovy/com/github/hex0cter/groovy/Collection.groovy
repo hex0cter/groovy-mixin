@@ -1,4 +1,4 @@
-package com.hex0cter.groovy
+package com.github.hex0cter.groovy
 
 import java.security.SecureRandom
 
@@ -23,6 +23,10 @@ class Collection {
             default:
                 return retval
         }
+    }
+
+    static Object getSample(final List list) {
+        sample(list)
     }
 
     static boolean isPartOf(final def objects, final List collection) {

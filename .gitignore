@@ -13,3 +13,6 @@ gradle-app.setting
 # Idea
 .idea/
 groovy-mixin.iml
+
+# Publisher
+gradle.properties

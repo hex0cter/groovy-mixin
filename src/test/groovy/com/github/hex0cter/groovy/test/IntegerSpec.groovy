@@ -1,4 +1,4 @@
-package com.hex0cter.groovy.test
+package com.github.hex0cter.groovy.test
 
 import spock.lang.Specification
 

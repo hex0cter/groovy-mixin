@@ -1,3 +1,3 @@
 moduleName = groovy-mixin
 moduleVersion = 1.0
-extensionClasses = com.hex0cter.groovy.Collection, com.hex0cter.groovy.Integer
+extensionClasses = com.github.hex0cter.groovy.Collection, com.github.hex0cter.groovy.Integer

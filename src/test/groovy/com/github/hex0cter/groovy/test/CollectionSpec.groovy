@@ -1,4 +1,4 @@
-package com.hex0cter.groovy.test
+package com.github.hex0cter.groovy.test
 
 import spock.lang.Specification
 
@@ -9,6 +9,7 @@ import spock.lang.Specification
 class CollectionSpec extends Specification {
     def "take sample from a collection"() {
         expect:
+        collection.sample.isPartOf collection
         collection.sample().isPartOf collection
         collection.sample(3).isPartOf collection
 

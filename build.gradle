@@ -1,9 +1,7 @@
 apply plugin: "groovy"
-apply plugin: 'maven-publish'
 apply plugin: 'codenarc'
 
-version = "1.0"
-description = "Groovy language mixin"
+apply from: 'maven-push.gradle'
 
 repositories {
     mavenCentral()
@@ -14,24 +12,6 @@ dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
     testCompile 'org.codenarc:CodeNarc:0.21'
-}
-
-task fatJar(type: Jar) {
-    baseName = project.name + '-all'
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-    with jar
-}
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId 'com.hex0cter'
-            artifactId 'groovy'
-            version '1.0'
-
-            from components.java
-        }
-    }
 }
 
 codenarc {

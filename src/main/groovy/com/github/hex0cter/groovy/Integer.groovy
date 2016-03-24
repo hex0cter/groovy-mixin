@@ -1,4 +1,4 @@
-package com.hex0cter.groovy
+package com.github.hex0cter.groovy
 
 /**
  * Internal class
