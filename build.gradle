@@ -1,7 +1,7 @@
 apply plugin: "groovy"
 apply plugin: 'codenarc'
 
-apply from: 'maven-push.gradle'
+//apply from: 'maven-push.gradle'
 
 repositories {
     mavenCentral()
